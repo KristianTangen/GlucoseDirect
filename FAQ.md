@@ -9,7 +9,7 @@ This can be done under the iOS app "Settings" > "LibreLink" (or other app that c
 ## No more minute-by-minute notifications, but glucose alarms continue to sound
 Go to Settings, disable the Glucose Badge under "Other Settings", but leave all alarms enabled. With the glucose badge also minutely notifications disappear. Without the notifications, however, it is also unfortunately not possible to display mmol values on the app icon.
 
-## Display glucose values on the Apple Watch
+## Display glucose values on the Apple Watch !
 Create a new calendar in the Apple "Calendar" app, e.g. "Glucose Direct".  Activate the calendar export in the Glucose Direct app, also select the created calendar there.
 
 On the Apple Watch, activate a complication with the calendar selection "Your Schedule" on your Watch Face.
@@ -27,3 +27,4 @@ The second part is to connect the sensor in "Glucose Direct". The matching video
 2. Under "Overview", at the bottom "Sensor details" you should now see that a Libre 3 sensor was found.
 3. In "Glucose Direct" switch to "Settings" and enter the same LibreView data as in "LibreLinkUp" under "Connection Settings" at the top.
 4. Switch back to the overview and press "Connect sensor". After a short time, data will also appear in "Glucose Direct".
+.
