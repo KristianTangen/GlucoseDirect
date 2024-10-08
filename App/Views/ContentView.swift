@@ -21,9 +21,9 @@ struct ContentView: View {
                     Label("Glucose overview", systemImage: "waveform.path.ecg")
                 }.tag(DirectConfig.overviewViewTag)
 
-                ListsView().tabItem {
-                    Label("Glucose list view", systemImage: "list.dash")
-                }.tag(DirectConfig.listsViewTag)
+//                ListsView().tabItem {
+//                    Label("Glucose list view", systemImage: "list.dash")
+//                }.tag(DirectConfig.listsViewTag)
 
                 if (store.state.isConnectionPaired && store.state.isConnectable || store.state.isDisconnectable) && (DirectConfig.customCalibration || !store.state.customCalibration.isEmpty || store.state.sensor?.factoryCalibration != nil) {
                     CalibrationsView().tabItem {
