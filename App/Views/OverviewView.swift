@@ -83,5 +83,22 @@ struct OverviewView: View {
             ConnectionView()
             SensorView()
         }
+        .overlay(alignment: .topLeading) {
+            if store.state.hasSelectedConnection {
+                Button {
+                    store.dispatch(.disconnectConnection)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        store.dispatch(.connectConnection)
+                    }
+                } label: {
+                    Image(systemName: "arrow.triangle.2.circlepath")
+                        .font(.title2)
+                        .padding(8)
+                        .background(.ultraThinMaterial)
+                        .clipShape(Circle())
+                }
+                .padding(8)
+            }
+        }
     }
 }
